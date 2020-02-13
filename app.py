@@ -10,7 +10,12 @@ app = Flask(__name__)  # type: Flask
 
 @app.route('/')
 def index():
-    return render_template('homepage.html', username=session['user_name'])
+    return render_template('homepage.html')
+
+@app.route('/test/', methods=['POST', 'GET'])
+def test():
+    return render_template('test.html')
+
 
 app.secret_key = 'zxcvbnm,./'
 

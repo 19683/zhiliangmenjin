@@ -1,0 +1,12 @@
+开始检查……
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\ABC.java:12: 方法总数： 16 （最多： 15）。 [MethodCount]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\ABC.java:15:5: 圈复杂度： 12 （最多： 10 ）。 [CyclomaticComplexity]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\ABC.java:15:5: 方法 190 行（最多： 100 行）。 [MethodLength]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\InnerTest.java:12: 方法总数： 16 （最多： 15）。 [MethodCount]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\InnerTest.java:15:5: 圈复杂度： 12 （最多： 10 ）。 [CyclomaticComplexity]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\InnerTest.java:15:5: 方法 190 行（最多： 100 行）。 [MethodLength]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\src\main\java\com\testcenter\onlineschool\outstanding\InnerTest.java:12: 方法总数： 16 （最多： 15）。 [MethodCount]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\src\main\java\com\testcenter\onlineschool\outstanding\InnerTest.java:15:5: 圈复杂度： 12 （最多： 10 ）。 [CyclomaticComplexity]
+[ERROR] C:\Users\Aisino\Desktop\OnlineSchool\src\main\java\com\testcenter\onlineschool\outstanding\InnerTest.java:15:5: 方法 188 行（最多： 100 行）。 [MethodLength]
+检查完成。
+Checkstyle�� 9 �����������
