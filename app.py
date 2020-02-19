@@ -4,7 +4,7 @@ from flask import Flask
 from flask import render_template, url_for, redirect
 from flask import request, session
 
-from static_inspection import static_inspection
+from static_inspection import static_inspection, readreport
 
 app = Flask(__name__)  # type: Flask
 
@@ -18,7 +18,8 @@ def test():
     if request.method == 'POST':
         codepath = request.form['codepath']
         static_inspection(codepath)
-        return render_template('test.html')
+        report = readreport()
+        return render_template('test.html', report = report)
     return render_template('test.html')
 
 

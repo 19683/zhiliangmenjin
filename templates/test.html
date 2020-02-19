@@ -27,6 +27,20 @@
 				</form>
 			</div>
 		</div>
+
+		{%if report%}
+		<div class="box border green">
+			<div class="box-title">
+				<h4>
+					<i class="fa fa-quote-left"></i>
+					检查报告
+				</h4>
+			</div>
+			<div class="box-body">
+				{{report}}
+			</div>
+		</div>
+		{%endif%}
 	</div>
 </div>
 {% endblock %}
