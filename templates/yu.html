@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+    layout:decorator="layout">
+    <!-- layout文件路径-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+  <div layout:fragment="content" style="width:96%;margin-left:auto;margin-right:auto;">
+    <div class="row">
+		<div class="col-md-9">
+			<!-- BOX -->
+			<div class="box border blue">
+				<div class="box-title">
+					<h4><i class="fa fa-quote-left"></i>test</h4>
+				</div>
+				<div class="box-body ">
+					<form class="form-horizontal" method="post" action="/test/">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">项目代码路径:</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<input type="text" name="codepath" value="{{codepath}}" class="form-control">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="submit" name="submit" value="start">Start</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <th:block layout:fragment = "bodyAssets">
+     <script src = "../../static/js/security/mainframe.js"
+            th:src="@{/js/security/mainframe.js}"></script>
+ </th:block>    
+</body>
+
+</html>
