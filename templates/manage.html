@@ -1,0 +1,45 @@
+{% extends 'homepage.html' %}
+
+{% block container %}
+<script>
+
+</script>
+<div class="row">
+	<div class="col-md-9">
+		<h1>hello {{username}}.</h1>
+		<!-- BOX -->
+		<div class="box border blue">
+			<div class="box-title">
+				<h4><i class="fa fa-quote-left"></i>请选择您的检查项目：</h4>
+			</div>
+			<div class="box-body ">
+				<form class="form-horizontal" method="post" action="/manage/">
+				<input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+					<div class="form-group">
+						<label class="col-sm-3 control-label"></label>
+						<div class="col-sm-9">
+							<div class="input-group">
+								<div class="checkbox">
+									<label><input type="checkbox" name= 'moudle1' value="MethodLength">方法长度</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" name='moudle2' value="MethodCount">方法数量</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" name= 'moudle3' value="CyclomaticComplexity">圈复杂度</label>
+								</div>
+								<span class="input-group-btn">
+									<center>
+										<button class="btn btn-default" type="submit" name="submit" value="submit">Submit</button>
+									</center>
+								</span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>
+{% endblock %}

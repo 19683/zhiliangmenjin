@@ -1,0 +1,26 @@
+<!-- 模板的语法应当符合Jinja语法 -->
+<!-- extend from homepage layout -->
+{% extends "homepage.html" %}
+
+{% block container %}
+    <h1>Register</h1>
+    <form action="{{ url_for("register") }}" method="post" name="login">
+        {{ form.csrf_token }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=80) }}<br>
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            <!-- 我们可以传递input标签的属性，这里传递的是size属性 -->
+            {{ form.password(size=80) }}<br>
+        </p>
+        <p>
+            {{ form.project.label }}<br>
+            {{ form.project(size=80) }}<br>
+        </p>
+        <p>
+            <input name="register" type="submit" value="register">
+        </p>
+    </form>
+{% endblock %}

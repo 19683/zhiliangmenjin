@@ -1,0 +1,17 @@
+{
+    "yzx": [
+        "pbkdf2:sha256:150000$w9vDfXjU$76fb50a505838ae056e15d5f2773fbe45ffa0c411bd59de902bcc1d259b41be2",
+        "32357b90-9069-4a15-aece-3f18c77528d4",
+        "ManagementSystem"
+    ],
+    "yzx1": [
+        "pbkdf2:sha256:150000$DToE1VBr$7f73bd966f8424e7dd15652e4a078c1eb4d88d2ed738098197e505dbc1d25297",
+        "27a8fa3c-0e7b-4bba-a6bf-e0899c3a4e50",
+        "ManagementSystem"
+    ],
+    "han": [
+        "pbkdf2:sha256:150000$urBtUDbG$2391022b325f44793833a4b4af6521e5565353bcacf969317dbabc8d15a4142b",
+        "d167f56c-5195-4fb2-b7df-0f0f7ee7d2d0",
+        "ManagementSystem"
+    ]
+}

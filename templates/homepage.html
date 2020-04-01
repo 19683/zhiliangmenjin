@@ -53,8 +53,28 @@
 					</a>
 				</li>
 			</ul>
+			
 			<!-- /NAVBAR LEFT -->
 			<!-- BEGIN TOP NAVIGATION MENU -->
+			<ul class="nav navbar-nav pull-right">
+
+				{%if username%}
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<li class="dropdown user" id="header-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img alt="" src="/static/img/avatars/avatar3.jpg" />
+						<span class="username">{{username}}</span>
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="{{ url_for("logout") }}"><i class="fa fa-power-off"></i> 退出</a></li>
+					</ul>
+				</li>
+				{%else%}
+				<a href="{{ url_for("login") }}"><button class="btn btn-default">登录</button></a>
+				{%endif%}
+				<!-- END USER LOGIN DROPDOWN -->
+			</ul>
 			<!-- END TOP NAVIGATION MENU -->
 		</div>
 
